@@ -138,10 +138,10 @@ int main() {
                 if (deviceNum < 1 || deviceNum > static_cast<int>(devices.size())) {
                     throw out_of_range("Invalid device number.");
                 }
-                cin.ignore();  /* Clear newline from input buffer */
+                cin.ignore(); 
                 checkStatus(*devices[deviceNum - 1]);
             } else if (choice == "4") {
-                break;  /* Exit the loop and end the program */
+                break;
             } else {
                 cout << "Invalid choice. Please try again.\n";
             }
